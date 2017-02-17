@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ICONButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZK-1X-Vq4" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="111" y="48" width="154.5" height="31.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="ProfileTabbar"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Tap Me Please"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconTextSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abJ-jL-onQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTC-ec-D5h" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="67" y="99.5" width="242" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Centered Inverted"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-19-DhQ" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="67" y="172.5" width="242" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Centered Inverted"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6m-yU-tGz" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="39" y="250.5" width="299.5" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconTextSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Icon Button With Equal Widths"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-p5-tM7" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="39" y="322.5" width="299.5" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Longer text to show equal widths to above"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconTextSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-g3-KWj" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
+                                <rect key="frame" x="115" y="410.5" width="147.5" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Size"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonsDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqA-k2-2hJ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fm7-19-DhQ" firstAttribute="top" secondItem="wTC-ec-D5h" secondAttribute="bottom" constant="23" id="4BD-kF-UgG"/>
+                            <constraint firstItem="V6m-yU-tGz" firstAttribute="top" secondItem="Fm7-19-DhQ" secondAttribute="bottom" constant="28" id="6ET-qQ-Z7V"/>
+                            <constraint firstItem="wTC-ec-D5h" firstAttribute="top" secondItem="NZK-1X-Vq4" secondAttribute="bottom" constant="20" id="GJG-gs-9Fu"/>
+                            <constraint firstItem="9c8-g3-KWj" firstAttribute="centerX" secondItem="ACY-p5-tM7" secondAttribute="centerX" id="JGC-L0-n7I"/>
+                            <constraint firstItem="V6m-yU-tGz" firstAttribute="centerX" secondItem="Fm7-19-DhQ" secondAttribute="centerX" id="Jl9-W0-bQ8"/>
+                            <constraint firstItem="ACY-p5-tM7" firstAttribute="width" secondItem="V6m-yU-tGz" secondAttribute="width" id="Shv-CY-qFz"/>
+                            <constraint firstItem="9c8-g3-KWj" firstAttribute="top" secondItem="ACY-p5-tM7" secondAttribute="bottom" constant="38" id="Voq-IN-WMe"/>
+                            <constraint firstItem="ACY-p5-tM7" firstAttribute="top" secondItem="V6m-yU-tGz" secondAttribute="bottom" constant="22" id="Ww4-ar-Ta8"/>
+                            <constraint firstItem="NZK-1X-Vq4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="YNs-Jh-cJn"/>
+                            <constraint firstItem="ACY-p5-tM7" firstAttribute="centerX" secondItem="V6m-yU-tGz" secondAttribute="centerX" id="ZTR-97-xtV"/>
+                            <constraint firstItem="NZK-1X-Vq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZaR-Sh-PXo"/>
+                            <constraint firstItem="wTC-ec-D5h" firstAttribute="centerX" secondItem="NZK-1X-Vq4" secondAttribute="centerX" id="d1B-yy-Rj3"/>
+                            <constraint firstItem="Fm7-19-DhQ" firstAttribute="centerX" secondItem="wTC-ec-D5h" secondAttribute="centerX" id="fse-UG-uUb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Audio" width="41" height="41"/>
+        <image name="ProfileTabbar" width="19" height="18"/>
+    </resources>
+</document>
