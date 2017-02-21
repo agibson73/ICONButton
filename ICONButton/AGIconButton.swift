@@ -146,15 +146,6 @@ import UIKit
     }
     
     private func setUpView(){
-        
-        if highlightView == nil{
-            highlightView = UIView(frame: self.bounds)
-            highlightView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-            highlightView.alpha = 0
-            highlightView.isUserInteractionEnabled = false
-            self.addSubview(highlightView)
-        }
-        highlightView.backgroundColor = highLightColor
 
         if iconImageView == nil{
             iconImageView = UIImageView(image: iconImage)
@@ -178,6 +169,16 @@ import UIKit
             self.addSubview(iconLabel)
             
         }
+        
+        if highlightView == nil{
+            highlightView = UIView(frame: self.bounds)
+            highlightView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+            highlightView.alpha = 0
+            highlightView.isUserInteractionEnabled = false
+            self.addSubview(highlightView)
+            self.bringSubview(toFront: highlightView)
+        }
+        highlightView.backgroundColor = highLightColor
        
         iconLabel.font = UIFont.systemFont(ofSize: iconTextSize)
         iconLabel.text = iconText
@@ -237,7 +238,7 @@ import UIKit
             mainSpacer.frame = CGRect(x: maxWidth + maxImageHeight, y: 0, width: imagePadding, height: self.bounds.height)
             iconLabel.frame = CGRect(x: maxWidth + maxImageHeight + imagePadding, y: 0, width: iconLabel.frame.width, height: self.bounds.height)
         }
-        self.bringSubview(toFront: highlightView)
+        
 
     }
     
