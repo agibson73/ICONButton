@@ -22,16 +22,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZK-1X-Vq4" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="111" y="48" width="154.5" height="31.5"/>
+                                <rect key="frame" x="138" y="48" width="100" height="31.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HWJ-Gd-zSE"/>
+                                    <constraint firstAttribute="height" constant="31.5" id="eOB-Pl-hz6"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="ProfileTabbar"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Tap Me Please"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
-                                        <real key="value" value="17"/>
+                                        <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iconTextSize">
-                                        <real key="value" value="18"/>
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alignment">
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -39,7 +46,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTC-ec-D5h" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="67" y="99.5" width="242" height="50"/>
+                                <rect key="frame" x="73" y="99.5" width="230" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -47,10 +54,16 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Centered Inverted"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imagePadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-19-DhQ" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="67" y="172.5" width="242" height="50"/>
+                                <rect key="frame" x="73" y="160.5" width="230" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -58,10 +71,13 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Centered Inverted"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6m-yU-tGz" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="39" y="250.5" width="299.5" height="50"/>
+                                <rect key="frame" x="49" y="226.5" width="279.5" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -75,10 +91,13 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Icon Button With Equal Widths"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-p5-tM7" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="39" y="322.5" width="299.5" height="50"/>
+                                <rect key="frame" x="49" y="278.5" width="279.5" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -92,10 +111,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="iconTextColor">
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-g3-KWj" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="115" y="410.5" width="147.5" height="50"/>
+                                <rect key="frame" x="115" y="346.5" width="147.5" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
