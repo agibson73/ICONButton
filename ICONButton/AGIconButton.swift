@@ -149,9 +149,10 @@ import UIKit
         
         if highlightView == nil{
             highlightView = UIView(frame: self.bounds)
-            
+            highlightView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
             highlightView.alpha = 0
             highlightView.isUserInteractionEnabled = false
+            self.addSubview(highlightView)
         }
         highlightView.backgroundColor = highLightColor
 
@@ -236,9 +237,7 @@ import UIKit
             mainSpacer.frame = CGRect(x: maxWidth + maxImageHeight, y: 0, width: imagePadding, height: self.bounds.height)
             iconLabel.frame = CGRect(x: maxWidth + maxImageHeight + imagePadding, y: 0, width: iconLabel.frame.width, height: self.bounds.height)
         }
-        
-
-
+        self.bringSubview(toFront: highlightView)
 
     }
     

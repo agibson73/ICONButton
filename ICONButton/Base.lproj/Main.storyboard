@@ -113,13 +113,17 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-g3-KWj" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="115" y="345.5" width="147.5" height="50"/>
+                                <rect key="frame" x="124" y="345.5" width="130" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Intrinsic Size"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="I Highlight"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="alignment">
                                         <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldBounce" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highLightColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
