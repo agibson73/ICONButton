@@ -130,11 +130,13 @@ import UIKit
     
     private func setUpView(){
 
-        highlightView = UIView(frame: self.bounds)
+        if highlightView == nil{
+            highlightView = UIView(frame: self.bounds)
+            
+            highlightView.alpha = 0
+            highlightView.isUserInteractionEnabled = false
+        }
         highlightView.backgroundColor = highLightColor
-        highlightView.alpha = 0
-        highlightView.isUserInteractionEnabled = false
-
 
         
         if iconImageView == nil{
