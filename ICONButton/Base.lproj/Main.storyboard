@@ -22,12 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZK-1X-Vq4" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="138" y="48" width="100" height="31.5"/>
+                                <rect key="frame" x="115.5" y="48" width="145.5" height="30.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="HWJ-Gd-zSE"/>
-                                    <constraint firstAttribute="height" constant="31.5" id="eOB-Pl-hz6"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="ProfileTabbar"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="Tap Me Please"/>
@@ -46,7 +42,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTC-ec-D5h" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="73" y="99.5" width="230" height="38"/>
+                                <rect key="frame" x="73" y="98.5" width="230" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -63,7 +59,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-19-DhQ" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="73" y="160.5" width="230" height="38"/>
+                                <rect key="frame" x="73" y="159.5" width="230" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -77,7 +73,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6m-yU-tGz" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="49" y="226.5" width="279.5" height="30"/>
+                                <rect key="frame" x="49" y="225.5" width="279.5" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -97,7 +93,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-p5-tM7" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="49" y="278.5" width="279.5" height="30"/>
+                                <rect key="frame" x="49" y="277.5" width="279.5" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.57171165940000002" blue="0.8294764161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>
@@ -117,7 +113,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-g3-KWj" customClass="AGIconButton" customModule="ICONButton" customModuleProvider="target">
-                                <rect key="frame" x="115" y="346.5" width="147.5" height="50"/>
+                                <rect key="frame" x="115" y="345.5" width="147.5" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="Audio"/>

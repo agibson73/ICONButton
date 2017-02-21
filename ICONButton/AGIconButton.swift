@@ -130,16 +130,6 @@ import UIKit
     
     private func setUpView(){
         
-
-        
-        var usedWidth : CGFloat = self.intrinsicContentSize.width
-        
-        if bounds.width < usedWidth{
-            usedWidth = bounds.width
-        }
-        
-
-
         if highlightView == nil{
             highlightView = UIView(frame: self.bounds)
             
@@ -148,7 +138,6 @@ import UIKit
         }
         highlightView.backgroundColor = highLightColor
 
-        
         if iconImageView == nil{
             iconImageView = UIImageView(image: iconImage)
             iconImageView.contentMode = .scaleAspectFit
@@ -156,8 +145,6 @@ import UIKit
             self.addSubview(iconImageView)
             
         }
-       
-
 
         if mainSpacer == nil{
             mainSpacer = UIView(frame: CGRect(x: 0, y: 0, width: imagePadding, height: self.bounds.height))
@@ -180,18 +167,22 @@ import UIKit
         iconLabel.sizeToFit()
         
         
+        var usedWidth : CGFloat = self.intrinsicContentSize.width
+        
+        if bounds.width < usedWidth{
+            usedWidth = bounds.width
+        }
         
         let maxImageHeight = min(self.bounds.height - padding, imageSize)
         
+        //resize iconlabel if we have to
         if maxImageHeight + imagePadding + iconLabel.bounds.width + padding * 2 > usedWidth{
             iconLabel.frame = CGRect(x: 0, y: 0, width: self.bounds.width - iconImageView.bounds.width - imagePadding - padding * 2, height: iconLabel.bounds.height)
-            iconLabel.fitFontForSize()
+            iconLabel.fitFontForSize(minFontSize: 1, maxFontSize: iconTextSize, accuracy: 1.0)
        
         }
-        
-        
-      
-         let maxWidth = (self.bounds.width - iconLabel.bounds.width - maxImageHeight - imagePadding) / 2
+
+        let maxWidth = (self.bounds.width - iconLabel.bounds.width - maxImageHeight - imagePadding) / 2
         
         switch alignment {
         case 0:
@@ -203,7 +194,6 @@ import UIKit
             break
         case 1:
             //intrinsic center
-           
             iconImageView.frame = CGRect(x: maxWidth, y: self.bounds.midY - maxImageHeight/2,width:maxImageHeight, height: maxImageHeight)
             mainSpacer.frame = CGRect(x: maxWidth + maxImageHeight, y: 0, width: imagePadding, height: self.bounds.height)
             iconLabel.frame = CGRect(x: maxWidth + maxImageHeight + imagePadding, y: 0, width: iconLabel.frame.width, height: self.bounds.height)
@@ -296,7 +286,7 @@ import UIKit
 
 extension UILabel {
     
-    func fitFontForSize( minFontSize : CGFloat = 2.0, maxFontSize : CGFloat = 300.0, accuracy : CGFloat = 1.0) {
+    func fitFontForSize( minFontSize : CGFloat = 1.0, maxFontSize : CGFloat = 300.0, accuracy : CGFloat = 1.0) {
         var maxFontSize = maxFontSize
         var minFontSize = minFontSize
         assert(maxFontSize > minFontSize)
@@ -315,9 +305,8 @@ extension UILabel {
         }
         font = font.withSize(minFontSize)
         sizeToFit()
-        layoutIfNeeded() // Can be removed at your own discretion
+        layoutIfNeeded()
     }
-    
 }
 
 
